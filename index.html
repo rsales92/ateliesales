@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conheça o Ateliê Sales Criativo. Impressão 3D, crochê, tapetes artesanais e peças em madeira.">
+<title>Ateliê Sales Criativo | Impressão 3D e artesanato</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#principal">Ir para o conteúdo</a>
+<header class="top" id="inicio">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand"><img src="logo.png" width="56" height="56" alt=""><span>Ateliê Sales <small>Criativo</small></span></a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Navegação principal">
+      <a href="#pecas">Nossas peças</a>
+      <a href="#equipe">Quem somos</a>
+      <a class="button outline" href="https://www.instagram.com/sales.atelie3d/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </nav>
+  </div>
+</header>
+<main id="principal">
+  <section class="hero">
+    <div class="wrap hero-layout">
+      <div class="hero-copy">
+        <p class="kicker">IMPRESSÃO 3D & ARTESANATO</p>
+        <h1>Ideias que<br>ganham <em>forma.</em></h1>
+        <p class="intro">Da impressão 3D ao crochê, criamos peças com carinho para decorar, presentear e trazer personalidade ao seu espaço.</p>
+        <a class="button primary" href="#pecas">Conheça nossas peças</a>
+      </div>
+      <figure class="hero-photo">
+        <img src="impressao.webp" width="512" height="512" alt="Vaso ondulado roxo, dragão rosa e porta-lápis verde feitos em impressão 3D">
+        <span class="spark" aria-hidden="true">✦</span>
+        <figcaption>Modelos ilustrativos de impressão 3D</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="collection wrap reveal" id="pecas" aria-labelledby="pecas-titulo">
+    <div class="section-head">
+      <div><p class="kicker">MOSTRUÁRIO</p><h2 id="pecas-titulo">Nossas peças</h2></div>
+      <p>Explore as técnicas do ateliê em uma seleção de exemplos ilustrativos.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar categorias">
+      <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+      <button type="button" data-filter="3d" aria-pressed="false">Impressão 3D</button>
+      <button type="button" data-filter="croche" aria-pressed="false">Crochê</button>
+      <button type="button" data-filter="madeira" aria-pressed="false">Madeira</button>
+      <button type="button" data-filter="tapetes" aria-pressed="false">Tapetes</button>
+    </div>
+    <p class="sr-only" role="status" id="filter-status"></p>
+    <div class="cards">
+      <article class="card" data-category="3d">
+        <div class="card-image"><img src="impressao.webp" width="512" height="512" loading="lazy" alt="Peças decorativas em impressão 3D sobre bases lilás"></div>
+        <div class="card-copy"><h3>Impressão 3D</h3><p>Vasos, figuras articuladas e objetos de decoração com formas e texturas variadas.</p></div>
+      </article>
+      <article class="card" data-category="croche">
+        <div class="card-image"><img src="croche.webp" width="512" height="512" loading="lazy" alt="Coelho de crochê com cachecol rosa"></div>
+        <div class="card-copy"><h3>Bonecos de crochê</h3><p>Amigurumis feitos ponto a ponto, com detalhes que dão personalidade a cada boneco.</p></div>
+      </article>
+      <article class="card" data-category="madeira">
+        <div class="card-image"><img src="madeira.webp" width="512" height="512" loading="lazy" alt="Estruturas artesanais feitas de madeira clara"></div>
+        <div class="card-copy"><h3>Estruturas em madeira</h3><p>Bases, suportes e peças decorativas com a textura natural da madeira.</p></div>
+      </article>
+      <article class="card" data-category="tapetes">
+        <div class="card-image"><img src="tapetes.webp" width="512" height="512" loading="lazy" alt="Tapete artesanal redondo em roxo e creme"></div>
+        <div class="card-copy"><h3>Tapetes artesanais</h3><p>Tramas e combinações de cores que deixam a casa mais acolhedora.</p></div>
+      </article>
+    </div>
+  </section>
+  <section class="team wrap reveal" id="equipe" aria-labelledby="equipe-titulo">
+    <h2 id="equipe-titulo">Quem somos</h2>
+    <div class="team-grid">
+      <article class="team-card">
+        <img class="team-photo" src="equipe-juliana.webp" width="314" height="314" loading="lazy" alt="Juliana">
+        <h3>Juliana</h3>
+        <p class="team-role">Impressão 3D</p>
+        <p>Com a Juliana, as ideias saem da tela e ganham forma, uma camada de cada vez.</p>
+      </article>
+      <article class="team-card">
+        <img class="team-photo" src="equipe-luciene.webp" width="243" height="243" loading="lazy" alt="Luciene">
+        <h3>Luciene</h3>
+        <p class="team-role">Crochê</p>
+        <p>Nas mãos da Luciene, um novelo vira boneco cheio de personalidade, ponto por ponto.</p>
+      </article>
+      <article class="team-card">
+        <img class="team-photo" src="equipe-vanderlei.webp" width="297" height="297" loading="lazy" alt="Vanderlei">
+        <h3>Vanderlei</h3>
+        <p class="team-role">Artes em madeira</p>
+        <p>O Vanderlei é quem dá forma à madeira. Entre cortes e lixas, surgem peças com personalidade própria.</p>
+      </article>
+    </div>
+  </section>
+  <section class="about reveal" id="atelie">
+    <div class="wrap about-layout">
+      <img src="logo.png" width="230" height="230" alt="Logotipo do Ateliê Sales Criativo">
+      <div>
+        <h2>Tecnologia, artesanato e afeto.</h2>
+        <p>A impressão 3D é o carro-chefe do Ateliê Sales Criativo. Ela divide espaço com linhas, fios e madeira em um ateliê que gosta de explorar materiais e dar forma a novas ideias.</p>
+        <a class="button primary" href="https://www.instagram.com/sales.atelie3d/" target="_blank" rel="noopener noreferrer">Fale com o ateliê no Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-layout"><span>Ateliê Sales Criativo</span><a href="#inicio">Voltar ao início</a></div></footer>
+</body>
+</html>
+
