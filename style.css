@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   --cream: #fbf8f2;
+  --lilac: #eee1f0;
   --purple: #31174e;
   --plum: #5f3b79;
   --pink: #ae2058;
@@ -21,7 +22,7 @@ button { font: inherit; cursor: pointer; }
 :focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
 [hidden] { display: none !important; }
 .wrap { width: min(1180px, calc(100% - 5rem)); margin-inline: auto; }
-.top { border-bottom: 1px solid var(--line); }
+.top { background: var(--lilac); border-bottom: 1px solid var(--line); }
 .nav, nav, .brand, .footer-layout { display: flex; align-items: center; }
 .nav { justify-content: space-between; min-height: 84px; }
 .brand { gap: .7rem; font: bold 1.25rem Georgia, serif; text-decoration: none; }
@@ -66,7 +67,7 @@ h2 { font-size: clamp(2.5rem, 5vw, 4.4rem); line-height: 1; letter-spacing: -.04
 .card-copy { padding: 1.05rem; }
 h3 { font-size: 1.32rem; }
 .card p { margin: .5rem 0 0; }
-.about { background: #eee1f0; padding-block: 4rem; }
+.about { background: var(--lilac); padding-block: 4rem; }
 .about-layout { display: grid; grid-template-columns: minmax(140px, 250px) minmax(0, 610px); gap: 3rem; justify-content: center; align-items: center; }
 .about img { height: auto; width: 100%; }
 .about h2 { font-size: clamp(2.35rem, 4.6vw, 4rem); }
