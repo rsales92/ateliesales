@@ -150,20 +150,25 @@ footer a:hover { color: #f8adcc; }
 }
 
 .services { padding-bottom: 4.5rem; }
-.services h2 { margin-bottom: 1.6rem; }
+.service-note { margin: .6rem 0 1.4rem; color: var(--text); }
 .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
 .service-card { padding: 1.4rem; border: 1px solid var(--line); border-top: 3px solid var(--pink); border-radius: .85rem; background: #fffdf9; }
 .service-card p { color: var(--text); line-height: 1.6; margin: .6rem 0 0; }
-.team-card:last-child { align-content: center; }
+.team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; }
+.service-card { padding: 0 0 1.3rem; overflow: hidden; }
+.service-card img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+.service-card h3 { margin: 1rem 1.2rem 0; }
+.service-card p { margin-inline: 1.2rem; }
 .whatsapp {
   position: fixed;
   right: max(1rem, env(safe-area-inset-right));
   bottom: max(1rem, env(safe-area-inset-bottom));
   z-index: 3;
   display: inline-flex;
-  min-height: 48px;
+  width: 58px;
+  height: 58px;
   align-items: center;
-  padding: .7rem 1.25rem;
+  justify-content: center;
   border: 1px solid #ffffffbf;
   border-radius: 2rem;
   background: #126b42;
@@ -175,6 +180,6 @@ footer a:hover { color: #f8adcc; }
 .whatsapp:hover { background: #0d5132; }
 footer { padding-bottom: 3.4rem; }
 @media (max-width: 650px) {
-  .service-grid { grid-template-columns: 1fr; }
+  .service-grid, .team-grid { grid-template-columns: 1fr; }
   .services { padding-bottom: 3rem; }
 }
