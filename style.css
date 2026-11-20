@@ -148,3 +148,33 @@ footer a:hover { color: #f8adcc; }
     box-shadow: 0 0 0 1px var(--plum), 0 10px 22px #4d2f6840;
   }
 }
+
+.services { padding-bottom: 4.5rem; }
+.services h2 { margin-bottom: 1.6rem; }
+.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
+.service-card { padding: 1.4rem; border: 1px solid var(--line); border-top: 3px solid var(--pink); border-radius: .85rem; background: #fffdf9; }
+.service-card p { color: var(--text); line-height: 1.6; margin: .6rem 0 0; }
+.team-card:last-child { align-content: center; }
+.whatsapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 3;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  padding: .7rem 1.25rem;
+  border: 1px solid #ffffffbf;
+  border-radius: 2rem;
+  background: #126b42;
+  color: white;
+  box-shadow: 0 6px 18px #19392448;
+  font-weight: 750;
+  text-decoration: none;
+}
+.whatsapp:hover { background: #0d5132; }
+footer { padding-bottom: 3.4rem; }
+@media (max-width: 650px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .services { padding-bottom: 3rem; }
+}
