@@ -6,8 +6,8 @@
 <meta name="description" content="Conheça o Ateliê Sales Criativo. Impressão 3D, crochê, tapetes artesanais e peças em madeira.">
 <title>Ateliê Sales Criativo | Impressão 3D e artesanato</title>
 <link rel="icon" href="logo.png">
-<link rel="stylesheet" href="style.css?v=5">
-<script src="main.js" defer></script>
+<link rel="stylesheet" href="style.css?v=6">
+<script src="main.js?v=6" defer></script>
 </head>
 <body>
 <a class="skip" href="#principal">Ir para o conteúdo</a>
@@ -31,7 +31,10 @@
         <p class="kicker">IMPRESSÃO 3D & ARTESANATO</p>
         <h1>Ideias que<br>ganham <em>forma.</em></h1>
         <p class="intro">Da impressão 3D ao crochê, criamos peças com carinho para decorar, presentear e trazer personalidade ao seu espaço.</p>
-        <a class="button primary" href="#pecas">Conheça nossas peças</a>
+        <div class="hero-actions">
+          <a class="button primary" href="#pecas">Conheça nossas peças</a>
+          <button class="button outline quote-trigger" type="button" aria-haspopup="dialog" aria-controls="orcamento">Solicitar Orçamento</button>
+        </div>
       </div>
       <figure class="hero-photo">
         <img src="impressao.webp" width="512" height="512" alt="Vaso ondulado roxo, dragão rosa e porta-lápis verde feitos em impressão 3D">
@@ -116,5 +119,25 @@
     <path d="M12.04 2a9.93 9.93 0 0 0-8.61 14.88L2 22l5.25-1.38a9.94 9.94 0 0 0 4.79 1.22h.01A9.92 9.92 0 0 0 12.04 2Zm.01 18.16h-.01a8.25 8.25 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.27 8.27 0 1 1 7 3.86Z"/>
   </svg>
 </a>
+<dialog class="quote-dialog" id="orcamento" aria-labelledby="orcamento-titulo">
+  <form class="quote-form">
+    <button type="button" class="quote-close" aria-label="Fechar orçamento">×</button>
+    <h2 id="orcamento-titulo">Solicitar Orçamento</h2>
+    <label for="quote-service">Serviço</label>
+    <select id="quote-service" name="servico" required autofocus>
+      <option value="">Escolha um serviço</option>
+      <option>Impressão 3D</option>
+      <option>Bonecos de crochê</option>
+      <option>Estruturas em madeira</option>
+      <option>Tapetes artesanais</option>
+      <option>Bótons</option>
+      <option>Chaveiros</option>
+      <option>Impressões a laser</option>
+    </select>
+    <label for="quote-details">Detalhes do pedido (opcional)</label>
+    <textarea id="quote-details" name="detalhes" rows="4" maxlength="600" placeholder="Ex.: quantidade, tamanho, cores ou data desejada"></textarea>
+    <button type="submit" class="button primary">Abrir no WhatsApp</button>
+  </form>
+</dialog>
 </body>
 </html>

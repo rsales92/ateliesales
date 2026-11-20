@@ -48,3 +48,25 @@ if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: re
   }, { threshold: 0.12 });
   document.querySelectorAll(".reveal").forEach((section) => observer.observe(section));
 }
+
+const quoteDialog = document.querySelector("#orcamento");
+const quoteTrigger = document.querySelector(".quote-trigger");
+const quoteForm = quoteDialog.querySelector("form");
+
+quoteTrigger.addEventListener("click", () => quoteDialog.showModal());
+quoteDialog.querySelector(".quote-close").addEventListener("click", () => quoteDialog.close());
+quoteForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const data = new FormData(quoteForm);
+  const service = data.get("servico");
+  const details = data.get("detalhes").trim();
+  const lines = [
+    "Olá, Ateliê Sales Criativo! Gostaria de solicitar um orçamento.",
+    "",
+    `*Serviço:* ${service}`
+  ];
+  if (details) lines.push(`*Detalhes do pedido:* ${details}`);
+  const whatsapp = new URL(document.querySelector(".whatsapp").href);
+  whatsapp.searchParams.set("text", lines.join("\n"));
+  window.open(whatsapp, "_blank", "noopener,noreferrer");
+});
